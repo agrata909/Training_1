@@ -7,27 +7,29 @@ write a program to find the max and min elements in an array of integers */
 #define MAX 5
 int main()
 {
-	int max_no=-99;
-	int min=9999;
+	int maxno;
+	int min;
 	int arr[MAX];
 	int index;
 	printf("Enter the elements in array: ");
 	for(index=0;index<MAX;index++)
 	{
-		scanf("%d ",&arr[index]);
+		scanf("%d",&arr[index]);
 	}
 	printf("\n");
+	maxno=arr[0];
+	min=arr[0];
 	//to find min and max
 	for(index=0;index<MAX;index++)
 	{
-		if(arr[index]>max_no)
-			max_no=arr[index];
+		if(arr[index]>maxno)
+			maxno=arr[index];
 
 		if(arr[index]< min)
 			min=arr[index];
 	}
 	
-	printf("Maximum element is %d \n",max_no);
+	printf("Maximum element is %d \n",maxno);
 	printf("Minimum elements is %d\n ",min);
 	
 	printf("\n");
