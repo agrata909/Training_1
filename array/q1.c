@@ -9,16 +9,26 @@ int main()
 {
 	int arr[max];
 	int index;
+	int *ptr=arr;
 
 	printf("Enter the elements:");
 	for(index=0;index<max;index++)
 	{
-		scanf("%d",&arr[]);
+		scanf("%d",&arr[index]);
 	}
+
+	printf("\nPrinting elements of array using index ");
 	for(index=0;index<max;index++)
 	{
 		printf("%d ",arr[index]);
 	}
+
+	printf("\nPrinting elements of array using address ");
+	for(index=0;index<max;index++)
+	{
+		printf("%d ",*(ptr+index));
+	}
+
 	return EXIT_SUCCESS;
 
 }
