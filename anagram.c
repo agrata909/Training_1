@@ -13,7 +13,13 @@ int main()
 	printf("Enter string 2 : ");
 	fgets(s2,max-1,stdin);
 
-	int len1=strlen
+	int len1=strlen(s1);
+	int len2=strlen(s2);
+
+	if(len1==len2)
+	{
+		 
+	}
 	return 0;
 }
 
